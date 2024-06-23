@@ -1,0 +1,38 @@
+.task-pages{
+  margin-left: 0px;
+  padding: 0px;
+}
+
+.extra-piecer__inner{
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.all-figures{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 350px;
+}
+
+.figure-button{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.desired-figure{
+  margin: 0 auto;
+  padding-bottom: 200px;
+  cursor: default;
+}
+
+.figure-img{
+  width: 100px;
+  height: 100px;
+}

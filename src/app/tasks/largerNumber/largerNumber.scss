@@ -1,0 +1,57 @@
+.larger-number__inner{
+  height: 100vh;
+  width: 100vw;
+
+  .playing-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-field, .right-field{
+      position: absolute;
+      width: 49vw;
+      height: 100vh;
+      cursor: pointer;
+    }
+    
+    .left-field{
+      left: 0px;
+      top: 0px;
+    }
+    
+    .right-field{
+      right: 0px;
+      top: 0px;
+    }
+    
+    .field-text{
+      text-align: center;
+      color: black;
+      font-size: 58px;
+      font-weight: 900;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+    }
+    
+    .center-point{
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background: red;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+    }
+    
+    .green{
+      background: green;
+    }
+    
+    .field-text{
+      user-select: none;
+    }
+  }
+}

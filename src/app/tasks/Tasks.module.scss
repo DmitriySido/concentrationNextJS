@@ -1,0 +1,15 @@
+.taskLink{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: calc(100vw - 230px);
+  padding: 30px;
+  transition: all .15s ease-in-out;
+  color: rgb(40, 40, 40);
+  cursor: pointer;
+
+  &:hover{
+    background: rgb(40, 40, 40);
+    color: #f7ffcb;
+  }
+}
