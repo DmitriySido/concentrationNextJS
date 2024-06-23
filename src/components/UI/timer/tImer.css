@@ -5,4 +5,5 @@
   transform: translate(-50%, -50%);
   user-select: none;
   font-size: 24px;
+  display: block;
 }
