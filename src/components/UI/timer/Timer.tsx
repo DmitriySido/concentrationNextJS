@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Timer.scss'
+import './timer.scss'
 import PopupResults from '../popups/popupResults/PopupResults';
 
 interface ITimerProps {
