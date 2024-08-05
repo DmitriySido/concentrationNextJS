@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import ToggleButton from "../../buttons/buttonStart/ToggleButton"
 import './PopupResults.scss'
-import popupResultsLogic from "./popupResultsLogic";
+import popupResultsLogic from './popupResultsLogic';
 
 
 interface IResults {
