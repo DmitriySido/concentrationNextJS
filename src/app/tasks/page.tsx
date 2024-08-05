@@ -44,7 +44,7 @@ const Tasks = () => {
       secondInformation: 'Смотри на центральную точку, при этом выбирай большее число. И постарайся делать это как можно быстрее.',
       taskID: 'largerNumber',
       process: userData?.largerNumber ?? 0,
-      minCorrectAnswers: 25,
+      minCorrectAnswers: 24,
       maxWrongAnswers: 5,
       unlocked: true,
     },
