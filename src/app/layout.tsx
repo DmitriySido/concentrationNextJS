@@ -1,6 +1,7 @@
 import SideNavigation from "@/components/UI/sideNavigation/SideNavigation";
 import { Montserrat } from 'next/font/google'
 import './globalStyle.scss'
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <SideNavigation/>
-        {children}
+          {children}
       </body>
     </html>
   );

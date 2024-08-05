@@ -8,14 +8,14 @@ interface ITimerProps {
 }
 
 const Timer = ({ rightAnswers, wrongAnswers } : ITimerProps) => {
-  const [timer, setTimer] = useState(35)
+  const [timer, setTimer] = useState(45)
 
   useEffect(() => {
     const countdown = setInterval(() => {
       setTimer(prevTimer => {
         prevTimer === 1 && clearInterval(countdown)
         return prevTimer - 1
-      });
+      })
     }, 1000)
 
     return () => clearInterval(countdown)

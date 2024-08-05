@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import './largerNumber.scss'
 import TopPanel from '@/components/UI/topPanel/TopPanel';
 
-
 function LargerNumber(){
   useEffect(()=>{
     randomTwoNumber('none')

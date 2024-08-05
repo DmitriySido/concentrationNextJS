@@ -87,14 +87,14 @@ function ExtraPiece(){
       <TopPanel rightAnswers={rightAnswers} wrongAnswers={wrongAnswers}/>
       <div className='extra-piecer__inner'>
         <div className='desired-figure figure-button'>
-          <Image width={100} height={100} src={randomPiece && randomPiece} alt="Piece"/>
+          <Image width={100} height={100} src={randomPiece && randomPiece} alt="Piece" priority/>
         </div>
         <div className='all-figures'>
           {
             suffleArray.map((figure: any) => {
               return(
                 <div onClick={() => getPiece(figure.figureID)} key={figure.figureID + 'Piece'} className='figure-button'>
-                  <Image className='figure-img' src={figure.figure} alt="" />
+                  <Image className='figure-img' src={figure.figure} alt="" priority/>
                 </div>
               )
             })

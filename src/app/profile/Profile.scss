@@ -1,0 +1,37 @@
+.profile-inner{
+  display: none;
+}
+
+.profile-inner--active{
+  display: block;
+}
+
+.average-values__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .average-value__item{
+    width: 24%;
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgb(40, 40, 40);
+    color: #f7ffcb;
+
+    &:last-child{
+      margin-right: 20px;
+    }
+
+    .average-value__text{
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-size: 400;
+    }
+
+    .procent{
+      font-size: 24px;
+      font-weight: 800;
+    }
+  }
+}

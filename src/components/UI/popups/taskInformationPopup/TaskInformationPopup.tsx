@@ -1,18 +1,18 @@
-import './TaskInformationPopup.scss'
+'use client'
+
 import ToggleButton from '../../buttons/buttonStart/ToggleButton'
+import './TaskInformationPopup.scss'
+import { ITask } from '@/app/tasks/page'
+
 
 interface ITaskInfo {
-  task: {
-    taskName: string,
-    firstInformation: string,
-    secondInformation: string,
-    progress: number,
-    taskID: string
-  },
+  task : ITask,
   onClose: () => void
 }
 
 const TaskInformationPopup = ({ task, onClose }: ITaskInfo) => {
+  console.log(task)
+
   return (
     <div className='popup-overlay' onClick={onClose}>
       <div className='popup' onClick={(e) => e.stopPropagation()}>
@@ -28,12 +28,13 @@ const TaskInformationPopup = ({ task, onClose }: ITaskInfo) => {
 
 export default TaskInformationPopup
 
+
 // Вынести кнопку НАЧАТЬ в отдельный UI компоненте +
 // Сделать скрытие sidePanel при открытии задания +
 // Добавить кнопку выйти из задания и таймер 45 секунд +
 // по окончанию таймера показыать попап с статистикой и кнопкой выхода обратно на гл. страницу +
 
-// Добавить новый уровень 
+// Добавить новый уровень +
 // Добавить сохранение в localStorage
-// Выложить на vercel
+// Выложить на vercel +
 // Придумать новый уровень
